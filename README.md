@@ -47,6 +47,7 @@ This setup is ideal for learning or building a secure base infrastructure for re
 ---
 
 ## 📂 Project Structure
+---
 
 ec2/
 │
@@ -57,7 +58,7 @@ ec2/
 ├── mykey / mykey.pub # SSH keys (excluded from Git)
 ├── terraform.tfstate* # Terraform state files (excluded)
 └── README.md # Project documentation
-
+---
 
 ---
 

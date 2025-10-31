@@ -33,3 +33,57 @@ This setup is ideal for learning or building a secure base infrastructure for re
                 └───────────────────────────────┘
 
 
+---
+
+## 🛠️ Features
+
+- ✅ Infrastructure as Code (IaC) with **Terraform**
+- ✅ **VPC**, **subnets**, **IGW**, and **route tables** creation
+- ✅ **Bastion Host** in public subnet for secure access
+- ✅ **Private EC2 instance** with SSH access only via Bastion
+- ✅ **Elastic IP** attached to Bastion Host
+- ✅ Parameterized using **variables**
+
+---
+
+## 📂 Project Structure
+
+ec2/
+│
+├── main.tf # Main Terraform configuration
+├── var.tf # Input variables
+├── output.tf # Output values
+├── .gitignore # Ignore sensitive files
+├── mykey / mykey.pub # SSH keys (excluded from Git)
+├── terraform.tfstate* # Terraform state files (excluded)
+└── README.md # Project documentation
+
+
+---
+
+## ⚙️ Prerequisites
+
+Before running this project, make sure you have:
+
+- ✅ AWS account and credentials configured (`aws configure`)
+- ✅ Terraform installed (v1.5+ recommended)
+- ✅ Key pair for EC2 access
+- ✅ Git installed (if pushing to GitHub)
+
+---
+
+## 🚀 How to Deploy
+
+```bash
+# 1️⃣ Initialize Terraform
+terraform init
+
+# 2️⃣ Validate configuration
+terraform validate
+
+# 3️⃣ See execution plan
+terraform plan
+
+# 4️⃣ Apply configuration
+terraform apply -auto-approve
+

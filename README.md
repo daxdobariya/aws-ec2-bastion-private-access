@@ -103,14 +103,14 @@ Once complete, Terraform will output:
 2. **From the Bastion Host, SSH into the private instance:
    ```bash
    ssh -i mykey.pem ubuntu@<private-instance-ip>
-
+  
 ## 🧹 Destroy Infrastructure
 
 To remove all resources:
 
 ```bash
 terraform destroy -auto-approve
-
+```
 ## 🧠 Learning Concepts Covered
 
 - Terraform AWS provider basics  
@@ -118,7 +118,6 @@ terraform destroy -auto-approve
 - Bastion Host security pattern  
 - Private vs Public subnet communication  
 - Terraform outputs and variables  
-```
 
 ---
 

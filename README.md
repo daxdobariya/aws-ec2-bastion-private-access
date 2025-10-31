@@ -88,5 +88,18 @@ terraform plan
 # 4️⃣ Apply configuration
 terraform apply -auto-approve
 
+```
 
+Once complete, Terraform will output:
+- Bastion Host Public IP (Elastic IP)
+- Private EC2 Private IP
 
+## 🔐 Accessing the Private EC2
+
+1. **SSH into the Bastion Host** using Elastic IP:
+   ```bash
+   ssh -i mykey.pem ubuntu@<bastion-elastic-ip>
+
+2. **From the Bastion Host, SSH into the private instance:
+   ```bash
+   ssh -i mykey.pem ubuntu@<private-instance-ip>

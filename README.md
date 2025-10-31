@@ -88,3 +88,5 @@ terraform plan
 # 4️⃣ Apply configuration
 terraform apply -auto-approve
 
+
+
